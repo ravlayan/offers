@@ -1,244 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Himalayan Spice</title>
+  <meta charset="UTF-8">
+  <title>Offer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    body, html {
+      width: 100%;
+      height: 100%;
+      background-color: black; /* fills empty space */
+    }
 
-body {
-  background: linear-gradient(135deg, #111827, #1f2937, #0f172a);
-  color: white;
-}
-
-/* ✅ FULL BANNER (NO CROP) */
-.offer-banner {
-  width: 100%;
-  background: #000;
-}
-
-.offer-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
-
-/* MAIN */
-.container {
-  max-width: 420px;
-  margin: -20px auto 20px;
-  padding: 28px 22px;
-  border-radius: 24px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255,255,255,0.1);
-  text-align: center;
-}
-
-/* PROFILE */
-.profile-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255,255,255,0.25);
-  margin-bottom: 14px;
-}
-
-h1 {
-  font-size: 26px;
-  margin-bottom: 6px;
-}
-
-.username {
-  font-size: 14px;
-  color: #cbd5e1;
-  margin-bottom: 14px;
-}
-
-.bio {
-  font-size: 14px;
-  color: #e5e7eb;
-  margin-bottom: 24px;
-}
-
-/* SOCIALS */
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 26px;
-}
-
-.socials a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 14px;
-  text-decoration: none;
-  color: white;
-  background: rgba(255,255,255,0.1);
-  font-size: 14px;
-}
-
-.socials img {
-  width: 18px;
-  height: 18px;
-}
-
-/* LINKS */
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.link-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.1);
-  text-decoration: none;
-  color: white;
-  text-align: left;
-}
-
-/* LEFT */
-.link-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon img {
-  width: 20px;
-  height: 20px;
-}
-
-/* TEXT */
-.link-text h3 {
-  font-size: 16px;
-  margin-bottom: 3px;
-}
-
-/* ✅ ONLY THIS IS BOLD (clean, not overdone) */
-.link-text p {
-  font-size: 13px;
-  color: #d1d5db;
-  font-weight: 600;
-}
-
-.arrow {
-  font-size: 18px;
-  opacity: 0.7;
-}
-
-.footer {
-  margin-top: 24px;
-  font-size: 12px;
-  color: #cbd5e1;
-}
-
-@media (max-width:480px) {
-  h1 { font-size: 24px; }
-}
-</style>
+    .offer {
+      width: 100%;
+      height: 100%;
+      background-image: url('offer.png');
+      background-size: contain;   /* show full image */
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
-
 <body>
-
-<!-- FULL BANNER -->
-<div class="offer-banner">
-  <img src="banner.png" alt="Banner">
-</div>
-
-<div class="container">
-
-  <img class="profile-img" src="logo.png" alt="Logo">
-
-  <h1>Himalayan Spice</h1>
-  <div class="username">@himalayanspice</div>
-
-  <div class="bio">
-    Authentic flavours • Fresh food • Follow us for updates and offers
-  </div>
-
-  <div class="socials">
-    <a href="https://www.ubereats.com/gb/store/himalayan-spice/8h6YjrjgQ-aA7fgsLdl9DQ" target="_blank">
-      <img src="ubereats.jpg">Uber Eats
-    </a>
-    <a href="https://www.just-eat.co.uk/restaurants-himalyan-spice-donnington-wood/menu" target="_blank">
-      <img src="justeat.jpg">Just Eat
-    </a>
-    <a href="https://himalayanspicetelford.co.uk/" target="_blank">
-      <img src="foodhub.jpg">Foodhub
-    </a>
-  </div>
-
-  <div class="links">
-
-    <a class="link-card" href="https://www.facebook.com/profile.php?id=61587720652297" target="_blank">
-      <div class="link-left">
-        <div class="icon"><img src="facebook.jpg"></div>
-        <div class="link-text">
-          <h3>Facebook</h3>
-          <p>Stay connected with our page</p>
-        </div>
-      </div>
-      <div class="arrow">›</div>
-    </a>
-
-    <a class="link-card" href="https://www.instagram.com/himalayan_spice_telford/" target="_blank">
-      <div class="link-left">
-        <div class="icon"><img src="instagram.jpg"></div>
-        <div class="link-text">
-          <h3>Instagram</h3>
-          <p>Follow our latest posts</p>
-        </div>
-      </div>
-      <div class="arrow">›</div>
-    </a>
-
-    <a class="link-card" href="https://www.tiktok.com/@himalayan_spice_telford" target="_blank">
-      <div class="link-left">
-        <div class="icon"><img src="tiktok.png"></div>
-        <div class="link-text">
-          <h3>TikTok</h3>
-          <p>Watch our food clips</p>
-        </div>
-      </div>
-      <div class="arrow">›</div>
-    </a>
-
-  </div>
-
-  <div class="footer">
-    © 2026 Himalayan Spice
-  </div>
-
-</div>
-
+  <div class="offer"></div>
 </body>
 </html>
